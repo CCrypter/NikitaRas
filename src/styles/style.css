@@ -1,0 +1,270 @@
+**{
+    outline: 2px solid #11ff00;
+}
+.body{
+    background-color: rgb(29, 29, 29);
+    color:#FFFFFF;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: gold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-bottom: 10px;
+    padding-top: 15px;
+    height: auto;
+    width: 100vw;
+  }
+
+.header ul {
+    display: flex;
+    flex-direction: row; 
+    list-style: none; 
+    margin: 0;
+}
+
+.header ul li {
+    display: flex;
+    margin-right: 10px;
+}
+
+.header ul li:hover {
+    background-color: darkgoldenrod;
+    border-radius: 10%;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: black; 
+    margin: auto;
+}
+
+.logo {
+    width: 60; 
+    height: 60;
+    margin-left: 1%; 
+    display: flex;
+    border-radius: 20%
+}
+
+.header div {
+    display: flex; /* Устанавливает div как flex-контейнер */
+    margin-right: 20px; /* Добавляет отступ справа у div */
+}
+
+.header div a {
+    text-decoration: none; /* Убирает подчеркивание у ссылок в div */
+    color: black; /* Устанавливает цвет текста ссылок черным */
+    margin: auto; /* Центрирует текст внутри div */
+}
+
+.header div:hover {
+    background-color: darkgoldenrod; /* Изменяет фоновый цвет div при наведении курсора */
+    border-radius: 10%; /* Скругляет углы div при наведении курсора */
+}
+
+.img {
+    display: inline-block;
+    width: 25%;
+    overflow: hidden;
+    background: #2c2c2c;
+    outline: 0px solid #1c1c1c;
+    margin-top: 100px;
+}
+
+.center{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    margin-top: 100px;
+    background: #2c2c2c;
+    outline: 5px solid #353535;   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container_vid {
+    margin-top: 100px;
+    background: #2c2c2c;
+    outline: 5px solid #353535;   
+    display: block;
+}
+
+.video{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 640px;
+    height: 360px;
+    display: block;
+}
+
+.videos{
+    display: block;
+}
+
+.audio{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    width: 640px;
+    height: 360px;
+    display: block;
+}
+
+.audios{
+    display: block;
+}
+
+.person, .interests {
+    width: 25%;
+    margin: auto;
+}
+
+.container img {
+    border-radius: 10%;
+    width: 30%;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+    box-shadow: 0px 0px 10px #f9f9f9;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icons{
+    width: 64px;
+    justify-content: space-between;
+}
+
+
+.icons1{
+    width: 32px;
+    justify-content: space-between;
+    height: auto;
+    margin-left: auto;
+}
+
+.icons2{
+    width: 32px;
+    justify-content: space-between;
+    height: auto;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+.icons:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+.burger {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+    
+    .burger span{
+        position: absolute;
+        width: 30px;
+        left: 5px;
+        height: 3px;
+        background-color: black;
+        bottom: 20px;
+    }
+
+    .burger span:nth-child(1) {
+        transform: translateY(-10px)
+    }
+
+    .burger span:nth-child(3) {
+        transform: translateY(10px)
+    }
+
+    .header ul{
+        opacity: 0;
+        position: absolute;
+        background-color: gold;
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        top: 68px;
+        left: -40px;
+        z-index: 2;
+    }
+    
+    .header ul li{
+        margin-top: 10px;
+    }
+    
+    .header ul li :hover{
+        background-color:darkgoldenrod;
+        transform: scale(1.07);
+        transition: 0.4s ease;
+        border-radius: 5%;
+    }
+    
+    .header ul li a:hover{
+        color: white;
+    }
+    
+    .header ul li:nth-child(1){
+        margin-top: 20px;
+    
+    }
+    
+    .header ul li a{
+        margin-left:0%;
+        font-size: 1.2rem;
+    
+    }
+    
+    .header.open ul{
+        opacity: 1;
+        transform: translateX(10%);
+        transition:0.7s ease-in-out;
+    
+    }
+    
+    .header.open .burger span:nth-child(1){
+        transform: translateY(0) rotate(45deg);
+    
+    }
+    
+    .header.open .burger span:nth-child(2){
+        opacity: 0;
+    }
+    .header.open .burger span:nth-child(3){
+        transform: translateY(0) rotate(-45deg);
+    }
+    
+    
+}

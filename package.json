@@ -1,0 +1,14 @@
+{
+  "name": "wd-projects",
+  "version": "1.0.0",
+  "description": "bruh",
+  "main": "index.js",
+  "scripts": {
+    "test": "bruh"
+  },
+  "keywords": [
+    "burh"
+  ],
+  "author": "bruhcrypter",
+  "license": "ISC"
+}
