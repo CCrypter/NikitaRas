@@ -202,11 +202,13 @@
     }
 
     .burger span:nth-child(1) {
-        transform: translateY(-10px)
+        transform: translateY(-10px);
+        transition: 0.3s ease-in-out;
     }
 
     .burger span:nth-child(3) {
-        transform: translateY(10px)
+        transform: translateY(10px);
+        transition: 0.3s ease-in-out;
     }
 
     .header ul{
@@ -216,7 +218,7 @@
         flex-direction: column;
         width: 30%;
         height: auto;
-        top: 68px;
+        top: 75px;
         left: -40px;
         z-index: 2;
     }
@@ -250,8 +252,7 @@
     .header.open ul{
         opacity: 1;
         transform: translateX(10%);
-        transition:0.7s ease-in-out;
-    
+        transition: 0.7s ease-in-out;
     }
     
     .header.open .burger span:nth-child(1){
@@ -261,6 +262,7 @@
     
     .header.open .burger span:nth-child(2){
         opacity: 0;
+        transition: 0.4s ease;
     }
     .header.open .burger span:nth-child(3){
         transform: translateY(0) rotate(-45deg);
