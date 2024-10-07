@@ -1,0 +1,70 @@
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "./src/styles/style.css">
+        <title>CCrypter's form</title>
+    </HEAD>
+    <Body class="body">
+        <header class = "header open">
+            <div class = logo>
+                <img class = "logo" src = "./src/images/CCrypter.png">
+            </div>
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "video.html">Videos</a></li>
+                <li><a href = "audio.html">Audio</a></li>
+                <li><a href = "book.html">Books</a></li>
+                <li><a href = "hof.html">Hall of Fame</a></li>
+                <li class = "work"><a href = "#">Work &bigtriangledown;</a>
+                    <ul>
+                        <li><a href = "form.html">Form</a></li>
+                        <li><a href = "math.html">Math</a></li>
+                        <li><a href = "api.html">API</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div><a href = "https://ku.edu.kz">Entry</a>
+                <div class="burger" id ="burger2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+        <main class = "container form">
+            <form>
+                <fieldset>
+                    <legend>Personal information</legend>
+                    <label for = "name">Name</label>
+                    <input id = "name" name = "new_name" placeholder ="Name" type = "text" required/>
+                    <label for = "name">Surname</label>
+                    <input id = "name" name = "new_surname" placeholder ="Surname" type = "text" required/>
+                    <label for = "name">Age</label>
+                    <input id = "name" name = "new_age" placeholder ="18" type = "number" required/>                
+                    <label for = "name">Adress</label>
+                    <input id = "name" name = "new_adress" type = "text"/>
+                    <label for = "name">Phone Number</label>
+                    <input id = "phone" name = "new_phone" type = "tel"/>
+                    <label for = "email">Email</label>
+                    <input id = "email" name = "new_email" type = "email"/> 
+                </fieldset>
+                <fieldset>
+                    <legend>Educational information</legend>
+                    <label for = "faculty">Faculty</label>
+                    <input id = "faculty" name = "new_faculty" type = "text"/>
+                    <label for = "group">Group</label>
+                    <input id = "group" name = "new_group"type = "text" required/>
+                    <label for = "order">Date of enrollment order</label>
+                    <input id = "order" name = "new_order"type = "date"/>                
+                </fieldset>
+                <button type = "submit">Submit</button>
+            </form>
+        </main>
+        <div class="footer">
+            <a href = "https://www.youtube.com/@ccrypter" class = "icons1"><img class = "icons" src = "./src/images/youtube.png"></a>
+            <a href = "https://t.me/ccrypter" class = "icons2"><img class = "icons" src = "./src/images/telegram.png"></a>
+        </div>
+        <script src ="./src/js/script.js"></script>
+    </Body>
+</HTML>
