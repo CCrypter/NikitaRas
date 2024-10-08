@@ -218,7 +218,8 @@
 
 .hof {
     margin-top: 10px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px; 
+    width: 90%;   
 }
 
 .book{
@@ -417,6 +418,13 @@
 }
 
 @media (max-width: 700px) {
+
+    .container_hof img:hover {
+        transform: scale(1.1);
+        transition: 0.5s ease;
+        box-shadow: 0px 0px 20px #ffd500;
+    }
+
     .form form fieldset {
         width: 80%;
     }
