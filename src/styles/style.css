@@ -1,6 +1,13 @@
 **{
     outline: 2px solid #11ff00;
 }
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .body{
     background-color: rgb(29, 29, 29);
     background: url("Background.png");
@@ -60,19 +67,19 @@
 }
 
 .header div {
-    display: flex; /* Устанавливает div как flex-контейнер */
-    margin-right: 20px; /* Добавляет отступ справа у div */
+    display: flex;
+    margin-right: 20px;
 }
 
 .header div a {
-    text-decoration: none; /* Убирает подчеркивание у ссылок в div */
-    color: black; /* Устанавливает цвет текста ссылок черным */
-    margin: auto; /* Центрирует текст внутри div */
+    text-decoration: none;
+    color: black;
+    margin: auto;
 }
 
 .header div:hover {
-    background-color: darkgoldenrod; /* Изменяет фоновый цвет div при наведении курсора */
-    border-radius: 10%; /* Скругляет углы div при наведении курсора */
+    background-color: darkgoldenrod;
+    border-radius: 10%;
 }
 
 .header ul .work {
@@ -263,7 +270,7 @@
 .container img:hover {
     transform: scale(1.1);
     transition: 0.5s ease;
-    box-shadow: 0px 0px 10px #f9f9f9;
+    box-shadow: 0px 0px 20px #ffd500;
 }
 
 .footer{
@@ -418,6 +425,51 @@
 }
 
 @media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .person {
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        width: 100%; 
+        margin: 0; 
+      }
+    
+      .person p {
+        margin-top: 5px; 
+        margin-bottom: 10px;
+      }
+    
+      .container img {
+        margin-top: 20px;
+        border-radius: 10%; 
+        box-shadow: 0px 0px 5px gray;
+        width: 95%;
+        height: auto; 
+        margin: auto;
+      }
+    
+      .container img:hover {
+        transform: scale(1.03);
+        transition: 0.5s ease; 
+        box-shadow: 0px 0px 20px #ffd500; 
+      }
+    
+      .interests {
+        display: flex;
+        flex-direction: column; 
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+      }
+    
+      .interests p {
+        margin-top: 10px; 
+        margin-bottom: 0;
+      }
 
     .container_hof img:hover {
         transform: scale(1.1);
@@ -461,13 +513,14 @@
     .header ul{
         opacity: 0;
         position: absolute;
-        background-color: gold;
+        background: linear-gradient(rgb(230, 230, 0),rgba(170, 170, 0));
         flex-direction: column;
         width: 30%;
         height: auto;
         top: 75px;
         left: -40px;
         z-index: 2;
+        left: -40%;
     }
     
     .header ul li{
@@ -475,7 +528,7 @@
     }
     
     .header ul li :hover{
-        background-color:darkgoldenrod;
+        background-color:rgb(158, 100, 0);
         transform: scale(1.07);
         transition: 0.4s ease;
         border-radius: 5%;
@@ -491,14 +544,14 @@
     }
     
     .header ul li a{
-        margin-left:0%;
+        margin-left:0;
         font-size: 1.2rem;
     
     }
     
     .header.open ul{
         opacity: 1;
-        transform: translateX(10%);
+        transform: translateX(100%);
         transition: 0.7s ease-in-out;
     }
     
@@ -528,7 +581,7 @@
 
     .header ul .work ul li {
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 10%;
         background-color: unset;
         font-size: 1.2rem;
         margin-left: 10px;
@@ -536,10 +589,11 @@
     }
 
     .header ul .work ul li:hover {
-        color: darkgoldenrod;
+        color: linear-gradient(rgb(230, 230, 0),rgba(170, 170, 0));
     }
 
     .header ul .work:hover ul li a {
         color: black;
+        
     }
 }
