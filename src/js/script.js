@@ -51,9 +51,6 @@ function calculus(mark) {
             val = (num % Math.PI) === 0 ? "error" : 1/(Math.tan(num));
             break;       
     }
-    buttons.forEach((button) => {
-        button.style.backgroundColor = "white";
-      });
     vall.textContent = val.toFixed(2);
     result.textContent = res;
 }
@@ -62,47 +59,39 @@ function calculus(mark) {
 plus.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("+");
-    plus.style.backgroundColor = "red";
 });
 
 minus.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("-");
-    minus.style.backgroundColor = "red";
 });
 
 mult.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("*");
-    mult.style.backgroundColor = "red";
 });
 
 div.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("/");
-    div.style.backgroundColor = "red";
 });
 
 cos.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("cos");
-    cos.style.backgroundColor = "red";
 });
 
 sin.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("sin");
-    sin.style.backgroundColor = "red";
 });
 
 tg.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("tg");
-    tg.style.backgroundColor = "red";
 });
 
 ctg.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("ctg");
-    ctg.style.backgroundColor = "red";
 });
