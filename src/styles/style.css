@@ -1,3 +1,13 @@
+.c-button {
+    padding-top: 10px;
+    min-width: 350px;
+  }
+
+.c-input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
 **{
     outline: 2px solid #11ff00;
 }

@@ -15,16 +15,16 @@
                     <legend>Баллы на степуху</legend>
                     <span class="centerbut">
                         <label for = "rating">Рейтинг</label>
-                        <div>
+                        <div class ="c-input">
                             <input type = "number" id = 'rating' name = 'rating' placeholder = "70" min="0" max="100">
                         </div>
                         <label for = "exam">Экзамен</label>
-                        <div>
+                        <div class ="c-input">
                             <input type = "number" id = 'exam' name = 'exam' placeholder = "70" min="0" max="100">
                         </div>
                     </span>
                     <p><span class="centerbut" id="text1">Достоин?</span></p>
-                    <div class = "butcont centerbut">
+                    <div class = "butcont centerbut c-button">
                         <button id = "score_solve">Решить</button>
                     </div>
                     <p><span class="centerbut">Итоговая оценка:</span></p>
@@ -34,19 +34,27 @@
                     <legend>Сколько баллов на экзамене мне нужно, чтобы получить стипедию?</legend>
                     <span class="centerbut">
                         <label for = "rating1">Рейтинг</label>
-                        <div>
+                        <div class ="c-input">
                             <input type = "number" id = 'rating1' name = 'rating1' placeholder = "70" min="0" max="100">
                         </div>
                     </span>
-                    <div class = "butcont centerbut">
+                    <div class = "butcont centerbut c-button">
                         <button id = "score_solve1">Узнать</button>
                     </div>
                     <p><span class="centerbut">Тебе нужно:</span></p>
                     <p><span class="centerbut" id = "final1">0</span></p>
                 </fieldset>
+                <fieldset>
+                    <legend>Отчислятор 2000</legend>
+                    <div class = "butcont centerbut c-button">
+                        <button id = "score_solve2">!ЖМИ!</button>
+                    </div>
+                    <p><span class="centerbut" id="text2">Достоин?</span></p>
+                </fieldset>
             </form>
         </main>
         <script src ="./src/js/scores.js"></script>
         <script src ="./src/js/scores1.js"></script>
+        <script src ="./src/js/scores2.js"></script>
     </Body>
 </HTML>
