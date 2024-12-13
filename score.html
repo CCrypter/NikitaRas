@@ -1,0 +1,52 @@
+<HTML>
+    <HEAD>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "stylesheet" href = "./src/styles/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <title>Баллы на степуху</title>
+    </HEAD>
+    <Body class="body roboto">
+        <main class = "container math">
+            <form>
+                <fieldset>
+                    <legend>Баллы на степуху</legend>
+                    <span class="centerbut">
+                        <label for = "rating">Рейтинг</label>
+                        <div>
+                            <input type = "number" id = 'rating' name = 'rating' placeholder = "70">
+                        </div>
+                        <label for = "exam">Экзамен</label>
+                        <div>
+                            <input type = "number" id = 'exam' name = 'exam' placeholder = "70">
+                        </div>
+                    </span>
+                    <p><span class="centerbut" id="text1">Достоин?</span></p>
+                    <div class = "butcont centerbut">
+                        <button id = "score_solve">Решить</button>
+                    </div>
+                    <p><span class="centerbut">Итоговая оценка:</span></p>
+                    <p><span class="centerbut" id = "final">0</span></p>
+                </fieldset>
+                <fieldset>
+                    <legend>Сколько баллов на экзамене мне нужно, чтобы получить стипедию?</legend>
+                    <span class="centerbut">
+                        <label for = "rating1">Рейтинг</label>
+                        <div>
+                            <input type = "number" id = 'rating1' name = 'rating1' placeholder = "70">
+                        </div>
+                    </span>
+                    <div class = "butcont centerbut">
+                        <button id = "score_solve1">Узнать</button>
+                    </div>
+                    <p><span class="centerbut">Тебе нужно:</span></p>
+                    <p><span class="centerbut" id = "final1">0</span></p>
+                </fieldset>
+            </form>
+        </main>
+        <script src ="./src/js/scores.js"></script>
+        <script src ="./src/js/scores1.js"></script>
+    </Body>
+</HTML>
