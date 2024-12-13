@@ -55,7 +55,6 @@ function calculus(mark) {
     result.textContent = res;
 }
 
-
 plus.addEventListener("click", (event) => {
     event.preventDefault()
     calculus("+");

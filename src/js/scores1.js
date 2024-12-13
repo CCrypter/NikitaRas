@@ -1,8 +1,5 @@
-let text1 = document.getElementById("text1");
 let rating1 = document.getElementById("rating1");
 let final1 = document.getElementById("final1");
-
-let res = 0;
 
 function stepyxa1() {
     const rat1 = parseInt(rating1.value) || 0;
